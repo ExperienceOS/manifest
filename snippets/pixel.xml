@@ -6,9 +6,9 @@
           revision="eleven"
           review="gerrit.pixelexperience.org" />
 
-  <remote name="pixel-devices"
-          fetch="https://github.com/PixelExperience-Devices"
-          revision="eleven" />
+   <remote name="experience"
+          fetch="https://github.com/ExperienceOS/"
+          revision="refs/heads/eleven" />
 
   <remote name="pixel-gitlab"
           fetch="https://gitlab.com/PixelExperience"
@@ -101,7 +101,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel" />
+  <project path="frameworks/base" name="frameworks_base" remote="experience" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
@@ -111,7 +111,7 @@
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel" />
-  <project path="build/make" name="build" remote="pixel">
+  <project path="build/make" name="build" remote="experience">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -127,10 +127,10 @@
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
-  <project path="manifest" name="manifest" remote="pixel" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="experience" />
+  <project path="manifest" name="manifest" remote="experience" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="experience" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
 
@@ -168,7 +168,7 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PermissionController" name="packages_apps_PermissionController" remote="pixel" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="experience" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="pixel" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
@@ -179,7 +179,7 @@
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixel" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="experience" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="pixel" />
 
   <!-- Prebuilts -->
@@ -193,7 +193,7 @@
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="pixel" />
-  <project path="system/core" name="system_core" remote="pixel" />
+  <project path="system/core" name="system_core" remote="experience" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/media" name="system_media" remote="pixel" />
