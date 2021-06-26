@@ -1,4 +1,6 @@
-# ExperienceOS #
+<p align="center">
+  <img src="ExperienceOS.png" />
+</p>
 
 ### Sync ###
 
