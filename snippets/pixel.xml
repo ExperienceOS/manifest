@@ -6,6 +6,10 @@
           revision="eleven"
           review="gerrit.pixelexperience.org" />
 
+  <remote name="syberia"
+          fetch="https://github.com/syberia-project"
+          revision="11.0" />
+
   <remote name="experience"
           fetch="https://github.com/ExperienceOS/"
           revision="refs/heads/eleven" />
@@ -85,6 +89,7 @@
 
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="experience" />
+  <project path="external/asus/stitchimage" name="platform_external_asus_stitchimage" remote="syberia" />
   <project path="external/boringssl" name="external_boringssl" remote="pixel" />
   <project path="external/cldr" name="external_cldr" remote="pixel" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="pixel" />
