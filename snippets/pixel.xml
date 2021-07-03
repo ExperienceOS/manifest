@@ -12,7 +12,11 @@
 
   <remote name="experience"
           fetch="https://github.com/ExperienceOS/"
-          revision="refs/heads/eleven" />
+          revision="eleven" />
+
+  <remote name="experienceos-devices"
+          fetch="https://github.com/ExperienceOS"
+          revision="eleven" />
 
   <remote name="pixel-gitlab"
           fetch="https://gitlab.com/PixelExperience"
